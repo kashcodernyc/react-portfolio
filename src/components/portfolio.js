@@ -2,7 +2,7 @@ import React from 'react'
 import { useState } from 'react'
 import AllProjects from '../allProjects'
 import data from '../data'
-import Project from './project'
+
 
 
 
