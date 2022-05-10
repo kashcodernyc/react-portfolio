@@ -22,9 +22,8 @@ const NavLinks = () => {
             </li>
             <div className='mobileicons'>
                 <a className='socmedia' href='https://github.com/kashcodernyc/' target='_blank'><FaGithub /></a>
-                <a className='socmedia'
-                    href='https://www.linkedin.com/in/prakash-subba-6b53b1142' target="_blank"> <FaLinkedin /> </a>
-                <a className='socmedia' href='' target="_blank"><AiFillFile /></a>
+                <a className='socmedia'href='https://www.linkedin.com/in/prakash-subba-6b53b1142' target="_blank"> <FaLinkedin /> </a>
+                <a className='socmedia' href='https://prakashsubba.com/resume/WebDev.pdf' target="_blank"><AiFillFile /></a>
             </div>
         </ul>
             </>   

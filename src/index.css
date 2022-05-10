@@ -8,39 +8,36 @@
 
 } 
 body{
-    background-color: #fff;
+    background-color: white;
     font-family: 'Raleway',
     sans-serif;
     font-size: 13px;
     line-height: 1.6;
     font-weight: bold;
     color: black;
+    font-weight: 200;
 }
 
 .mainpage{
- 
+ background-color: rgb(255, 255, 255);
  width: fit-content;
  height: 95vh;
  width: 100%;
 }
 
 .mainContainer{
-    background-image: url('gradient.jpeg');
-    background-size: cover;
-    display: grid;
+    display: flex;
+    justify-content:space-evenly;
     align-items: center;
     height: 95vh;
     
 }
 
 .header{
-
-    top: 0px;
     display: flex;
     padding: 10px 20px 10px 20px;
     justify-content: space-between;
     width: 100%;
-    background-color: #292929;
     
 }
 .navbar{
@@ -49,6 +46,9 @@ body{
     width: 400px;
     padding-top: 5px;
     
+}
+.navbar > ul{
+    padding-left: 0px;
 }
 
 .mobileNavigation{
@@ -63,12 +63,12 @@ li a{
 .navlink:after{
     content: "";
     position: absolute;
-    background-color: white;
+    background-color: black;
     height: 3px;
     width: 0;
     left:0;
     bottom: -10px;
-    transition: 0.3s
+    transition: 0.7s;
     
 }
 
@@ -77,50 +77,66 @@ li a{
 }
 
 .navlink:hover{
-    color: white;
-    transition: 0.5s;
+    color: #0fe500;
+    transition: all 0.4s ease 0s;
 }
 
 a{
     position: relative;
     text-decoration: none;
-    color: #ffab37;
+    font-weight: 300;
+    color: black;
 }
 
 .maincontent{
-    margin-left: auto;
-    margin-right: auto;
-    Font-Size: 45px;
-    font-weight: bold;
-    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
     padding: 2rem;
-    max-width: 800px;
-    animation: Slide_Up 1s ease-out;
+    max-width: 900px;
+    animation: Slide_Up 0.5s ease-out;
+}
+
+#mainButton{
+    height: 40px;
+    font-size: 16px;
+    width: 120px;
 }
 
 
 .maincontentHeader{
-Font-Family: 'Nunito',Sans-Serif;
- Font-Size: 45px;
- text-align: left;
- font-weight: bold;
- color: white;
+ font-weight: 900;
+ text-transform: uppercase;
+ Font-Size: 40px;
+ text-align: center;
+}
+
+.intro-name{
+    font-size: 25px;
+}
+.kashPortfolio{
+    color: white;
+    background-color: black;
+    transition: all 0.4s ease 0s;
 }
 
 .heading{
-    font-family: 'Birthstone',
-    cursive;
     font-size: 25px;
+     font-weight: 700;
+}
+#kash{
+    color:#0fe500;
 }
 
-#kash:hover{
-    color: white;
+#kash:hover {
+   color: black;
 }
 
 .underline{
     width: 5rem;
     height: 0.25rem;
-    background: #292929;
+    background: #0fe500;
     margin-left: auto;
     margin-right: auto;
 }
@@ -131,18 +147,48 @@ Font-Family: 'Nunito',Sans-Serif;
 .mobileicons {
     display: none;
 }
+.avatar-container{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background-image: url('./myAvatar.png');
+    background-size: cover;
+}
 
+.avatar{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.avatar-btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nyc{
+background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);
+font-size: 50px;
+background-size: 400%;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+animation: TEXT_ANIMATION 10s linear infinite;
+
+}
+
+
+.self-description{
+color: black;
+}
 
 
 .socmedia{
     font-size: 20px;
     margin-left: 10px;
-    color: #ffab37;
     transition: 0.5s;
 }
 
 .socmedia:hover {
-    color: white;
+    color: #0fe500;
 }
 
 .burgermenu{
@@ -161,7 +207,6 @@ Font-Family: 'Nunito',Sans-Serif;
     align-items: center;
     height: 95vh;
     background-color: #fff;
-    color: black;
    
 }
 .story{
@@ -173,34 +218,36 @@ Font-Family: 'Nunito',Sans-Serif;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-    animation: Slide_Up 1s ease-out;
+    animation: Slide_Up 0.5s ease-out;
 }
 
 h1{
     text-align: center;
+}
+
+.portfolio-header{
+    text-align: center;
     font-size: 20px;
-    font-weight: bold;
-    color: #414141;
+    font-weight: 200;
 }
 
 
 p{
     font-size: 14px;
- 
 }
 
 
 .languages{
     text-align: center;
     font-size: 100px;
-    color: rgb(40, 40, 153);
-
 }
 
+.languages > ul{
+    padding-left: 0rem;
+}
 /*  ////////////////// portfolio  ///////////////// */
 
 .portfolio{
-    background-color: #fff;
     display: grid;
     padding-top: 2rem;
 
@@ -234,7 +281,7 @@ p{
 .projectinfo{
     text-align: center;
     max-width: 500px;
-    animation: Slide_Right 1s ease-out;
+    animation: Slide_Right 0.5s ease-out;
 
 }
 
@@ -243,32 +290,33 @@ p{
 }
 
 .description{
-    animation: Slide_Left 1s ease-out;
+    animation: Slide_Left 0.5s ease-out;
 }
+
 .projectimg{
     width: 400px;
-    height: auto;
-   
+    height: auto;  
 }
 
 
 .info{
     text-align: left;
     overflow: scroll;
+    font-weight: 100;
     
 }
 
  .readmore {
      border: none;
      background: none;
-     font-weight: bold;
-     color: #ffab37;
+     color: #0b9f00;
+     font-weight: 300;
+
  }
 
  .readmore:hover {
-     color: rgb(1, 255, 99);
+     color: black;
  }
-
 
 
 
@@ -278,11 +326,12 @@ p{
 
 .button{
     margin-top: 10px;
-    color: #fff !important;
+    color: white;
     text-transform: uppercase;
+    font-weight: 300;
     text-decoration: none;
     text-align: center;
-    background: #ffab37;
+    background: #0fe500;
     width: 100px;
     height: 30px;
     padding: 5px 10px 5px 10px;
@@ -293,6 +342,10 @@ p{
 
 }
 
+.button:hover{
+    background: rgb(0, 255, 157);
+    color: black;
+}
 ul{
     list-style-type: none;
 }
@@ -316,24 +369,14 @@ ul{
     
  
 }
-@media(max-width: 800px) and (min-width:480px) {
 
-.projectinfo{
-   max-width: 400px;
-   animation: Slide_Up 1s ease-out;
-}
-.description{
-    max-width: 480px;
-    animation: Slide_Up 1s ease-out;
-   
-}
-.projectimg{
-    max-width: 400px;
-}
-}
+
 
 @media(max-width: 800px) {
 
+.mainContainer{
+    flex-direction: column;
+}
 .navigation{
     display: none;
 }
@@ -343,7 +386,7 @@ ul{
 
 }
 #kash{
-    width: 100px;
+    width: 190px;;
 }
 
 .mobileNavigation{
@@ -367,13 +410,11 @@ ul{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    animation: Slide_Down 0.7s ease-out;
+    animation: Slide_Down 0.3s ease-out;
     height: 100vh;
-   
+    padding-left: 0px;
     
 }
-
-
 
 
 .navbar li{
@@ -388,19 +429,20 @@ ul{
     right: 5%;
     top: 15px;
     cursor: pointer;
-    color: #ffab37;
+    color: black;
 
 }
 .languages {
     text-align: center;
     font-size: 70px;
-    color: rgb(40, 40, 153);
+    color: black;
 
 }
 
 
 .portfoliContent{
     width: 500px;
+
 
  }
 
@@ -409,22 +451,34 @@ ul{
      display: flex;
      flex-direction: column;
      align-items: center;
-     animation: Slide_Up 1s ease-out;
+     animation: Slide_Up 0.5s ease-out;
  }
  .portfolioContent:nth-child(odd) {
      display: flex;
      flex-direction: column;
      align-items: center;
-     animation: Slide_Up 1s ease-out;
+     animation: Slide_Up 0.5s ease-out;
 
  }
+
+.projectinfo {
+    max-width: 400px;
+    animation: Slide_Up 0.5s ease-out;
+}
+
+.description {
+    max-width: 480px;
+    animation: Slide_Up 0.5s ease-out;
+
+}
+
+
  
- .projectinfo{
-     width: 500px;
- }
  .projectimg{
      width: 480px;
  }
+
+ 
 
  .icons{
      text-align: center;
@@ -450,19 +504,30 @@ ul{
     }
    
     .maincontentHeader {
-        font-Size: 35px;
+        font-Size: 25px;
 
     }
+
+    .intro-name {
+        font-size: 15px;
+    }
+
+    .nyc {
+        font-size: 30px;
+    }
+
     .projectinfo {
         width: 350px;
     }
     .projectinfo{
-        animation: Slide_Up 1s ease-out;
+        animation: Slide_Up 0.5s ease-out;
     }
 
     .projectimg {
         width: 340px;
-        animation: Slide_Up 1s ease-out;
+    }
+    .description{
+        animation: Slide_Up 0.5s ease-out;
     }
    
     .portfolioContent{
@@ -472,6 +537,9 @@ ul{
     }
 
 }
+
+
+
 
 
 @keyframes Slide_Up {
@@ -487,10 +555,12 @@ ul{
 @keyframes Slide_Down {
     0% {
         transform: translateY(-100px);
+        opacity: 0;
     }
 
     100% {
         transform: translateY(0);
+        opacity: 100;
     }
 
 }
@@ -512,5 +582,17 @@ ul{
 
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes rotate{
+    100%{
+        transform: rotate(360deg)
+    }
+}
+
+@keyframes TEXT_ANIMATION{
+    100%{
+        background-position: 400%;
     }
 }

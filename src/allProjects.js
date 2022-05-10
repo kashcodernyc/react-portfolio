@@ -1,6 +1,5 @@
 import React from 'react'
 import { useState } from 'react';
-import Project from './components/project';
 
 const AllProjects = ({id, name, date, image, description, link}) => {
 
@@ -10,7 +9,7 @@ const AllProjects = ({id, name, date, image, description, link}) => {
      return(
             <div className = 'portfolioContent' key = {id}>
                 <div className = 'projectinfo'>
-                    <h1>{name}</h1>
+                    <p className = 'portfolio-header'>{name}</p>
                     <p className = 'date'>{date}</p>
                     <p className = 'info'>{readMore ? description : `${description.substring(0,180)}... `}<button className = 'readmore' onClick = {() => setReadMore(!readMore)} >{readMore ? '...Read Less' : 'Read More'}</button>
                     </p>

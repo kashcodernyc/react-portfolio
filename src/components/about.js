@@ -1,5 +1,6 @@
 import React from 'react'
-import { FaHtml5, FaCss3Alt, FaReact } from  'react-icons/fa';
+import { FaHtml5, FaCss3Alt, FaReact, FaSass, FaBootstrap} from  'react-icons/fa';
+import {SiRedux} from 'react-icons/si';
 
 
 
@@ -17,7 +18,10 @@ const About = () => {
                 <ul className = 'languages'>
                 <FaHtml5/>
                 <FaCss3Alt/>
+                <FaBootstrap/>
+                <FaSass/>
                 <FaReact/>
+                <SiRedux/>
                 </ul>
             </div>
     </section>

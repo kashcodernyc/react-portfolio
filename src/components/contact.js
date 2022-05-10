@@ -36,7 +36,7 @@ const Contact = () => {
         if(!name || !email || !subject ||!message){
             toast.error('Please provide value in each input field')
         }else{
-            const res = fetch("https://reactfinal-77ffc-default-rtdb.firebaseio.com/contacts.json",
+            const res = fetch("https://contactform-d4f78-default-rtdb.firebaseio.com/contacts.json",
 
                 {
                     method: "POST",
@@ -124,7 +124,7 @@ const Contact = () => {
                                             </div>
                                             <div className = 'text pl-3'>
                                                 <p><span>Phone:</span> 
-                                                <a href = 'tel://3472807828'>+1 347 280 7828</a></p>
+                                                <a href = 'tel://3472807828'> +1 347 280 7828</a></p>
                                             </div>
                                         </div>
                                         <div className = 'dbox w-100 d-flex align-item-center'>
@@ -133,7 +133,7 @@ const Contact = () => {
                                             </div>
                                             <div className = 'text pl-3'>
                                                 <p><span>Email:</span>
-                                                <a href = 'mailto:prakash_subba08@hotmail.com'>yoursite.com</a>
+                                                <a href = 'mailto:prakash_subba08@hotmail.com'> prakash_subba08@hotmail.com</a>
                                                 </p>
                                             </div>
                                         </div>
@@ -143,7 +143,7 @@ const Contact = () => {
                                             </div>
                                             <div className = 'text pl-3'>
                                                 <p><span>Website:</span>
-                                                <a href = '#'>prakashsubba.com</a>
+                                                <a href = '#'> prakashsubba.com</a>
                                                 </p>
                                             </div>
                                         </div>
