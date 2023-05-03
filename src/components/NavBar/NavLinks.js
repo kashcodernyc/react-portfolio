@@ -30,7 +30,7 @@ const NavLinks = () => {
           <a
             className="socmedia"
             href="https://github.com/kashcodernyc/"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             <FaGithub />
           </a>
@@ -45,7 +45,7 @@ const NavLinks = () => {
           <a
             className="socmedia"
             href="https://prakashsubba.com/resume/WebDev.pdf"
-            target="_blank"
+            target="_blank" rel="noreferrer"
           >
             <AiFillFile />
           </a>
