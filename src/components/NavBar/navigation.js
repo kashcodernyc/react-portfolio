@@ -1,13 +1,12 @@
-import React from 'react';
+import React from "react";
 import NavLinks from "./NavLinks";
 
 const Navigation = () => {
-    return (
-        <nav className = 'navigation'>
-            <NavLinks/>   
-        </nav>
-        
-    );
-}
+  return (
+    <nav className="navigation">
+      <NavLinks />
+    </nav>
+  );
+};
 
 export default Navigation;

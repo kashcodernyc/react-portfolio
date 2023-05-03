@@ -147,13 +147,7 @@ a{
 .mobileicons {
     display: none;
 }
-.avatar-container{
-    width: 300px;
-    height: 300px;
-    border-radius: 50%;
-    background-image: url('./myAvatar.png');
-    background-size: cover;
-}
+
 
 .avatar{
     display: flex;
@@ -164,6 +158,12 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+}
+
+.avatarImg{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
 }
 .nyc{
 background: linear-gradient(to right, #12c2e9, #c471ed, #f64f59);

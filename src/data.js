@@ -1,66 +1,21 @@
-export default [{
-        id: 1,
-        name: 'Chat App',
-        date: 'May 2022',
-        image: 'images/chat-app.jpeg',
-        description: 'This app is built using express.js and socket.io for real time communication between the server and client. Multiple users can join the chat room and message each other. The chat app is able to display all the users who are currently in the room and alert them about the user who joined and left the chat. It also allows users to share their current location.',
-        link: 'http://node-chat-app-prakash.herokuapp.com'
-    },
-    {
-        id: 2,
-        name: 'React-Mapty',
-        date: 'Nov 2021',
-        image: 'images/mapty-react.jpg',
-        description: 'This project is built using React. It has some additional features which is upgraded from previous Mapty project. Users can now edit, delete, and remove all workouts. Users can also toggle between dark mode and light mode. This was done by styled-component, which is a react library to style components. This project uses react hooks such as useState, useEffect, and useContex for sharing states in different components. This project uses react-leaflet library compared to the regular leaflet from previous project. There is also reverse-geocoding to get access to the location name such as staddress and the city.',
-        link: 'https://mapty-react.netlify.app/',
+export const Projects = [
+  {
+    id: 1,
+    name: "React Dashboard with Firebase",
+    image: "images/dashboard.jpg",
+    description:
+      "The admin dashboard built with React and Firebase is a tool that provides comprehensive solution for invoice management. The admin dashboard allows users to login and easily manage their invoices, including creating, posting, updating, and deleting them as needed. One of the key technologies used in the dashboard is React Hooks, specifically the Context API for state management. This allows the dashboard to efficiently manage state and ensure that data is always up-to-date. Additionally, Firebase is used for database management, providing a scalable and secure platform for data storage and management.",
+    link: "https://firebase-admin-react.netlify.app/",
+  },
+  {
+    id: 2,
+    name: "React Mapty",
+    image: "images/mapty-react.jpg",
+    description:
+      "This project is built using React. It has some additional features which is upgraded from previous Mapty project. Users can now edit, delete, and remove all workouts. Users can also toggle between dark mode and light mode. This was done by styled-component, which is a react library to style components. This project uses react hooks such as useState, useEffect, and useContex for sharing states in different components. This project uses react-leaflet library compared to the regular leaflet from previous project. There is also reverse-geocoding to get access to the location name such as staddress and the city.",
+    link: "https://mapty-react.netlify.app/",
+  },
+];
 
-    },
-
-    {
-        id: 3,
-        name: 'The Weather App',
-        date: 'June 2021',
-        image: 'images/weather.jpg',
-        description: 'The Weather App uses Open Weather Map API. Users can enter the city or zip code to access weather of their city. It also displays background-image based on the location they entered.',
-        link: 'https://prakashsubba.com/projects/weather/weather.html',
-
-    },
-
-    {
-        id: 4,
-        name: 'Mapty',
-        date: 'May 2021',
-        image: 'images/mapty.jpg',
-        description: 'I worked on this Udemy project called Mapty, which uses geolocation to provide the location for the workouts. This application allows users to pin point their workout locations. Users can select different types of workouts and input the description such as duration, elevation and distance. This app uses third party open-source JavaScript library called Leaflet, which is a mobile friendly interactive map. In order to insert data, click on any desired location on the map.Once you have inserted all the required fields, press enter and the pin will be displayed on the map with the type of workout and date.On the left column all the workout will be displayed along with the calculated pace and speed.You can click any workout to view the exact location on the map.If you want to clear all the workouts you need to go to the console and type App.reset()',
-        link: 'https://prakashsubba.com/projects/mapty/',
-    },
-
-    {
-        id: 5,
-        name: 'Lyrical Design',
-        date: 'April 2021',
-        image: 'images/lyrics.jpg',
-        description: 'This design displays proper understanding of CSS animation as well as media queries. It has many break points for the responsiveness through various devices. It also includes jQuery code snippets for the ripple effect.',
-        link: 'http://prakashsubba.com/lyrics/main/ny.html',
-
-    },
-
-    {
-        id: 6,
-        name: 'Bevin Kacon',
-        date: 'March 2021',
-        image: 'images/Bevin.jpg',
-        description: 'Bevin Kacon is a trivia game that I am working alongside with Professor Smith and few of my classmates. The goal for this game is to find out the closest path between the two actors listed on the top tile. This game is built for the movie/TV fanatics who knows very well about the actors and their credits.',
-        link: 'http://prakashsubba.com/WebDev2/BevinKacon/bevinV4.html',
-    },
-
-    {
-        id: 7,
-        name: 'Fastest Production Car',
-        date: 'Janaury 2021',
-        image: 'images/car.jpg',
-        description: 'This website lists the fastest production cars and their specs. Working on to make the site responsive. Uses flex-box display property. Contains UI elements such as hover state.',
-        link: 'http://prakashsubba.com/WebDesign1/WebDesign/fastcars/index.html',
-
-    }
-]
+export const Bio =
+  "Prakash Subba is a highly motivated Software Engineer with a passion for software design and development. His interest in software development began during his high school years, when he discovered software such as Adobe Illustrator, Photoshop, and Premier. His desire to combine his creativity with his logical thinking led him to pursue a career in software development, with a focus on creating applications that have both eye-catching designs and have dynamic features. Currently, Prakash has extensive experience with a variety of technologies, including HTML5, CSS3, JavaScript, React, Redux, Node.js, Express.js, Typescript, and GraphQl. He has worked with major financial institutions such as American Express, Transamerica, and CITI, where he has developed a deep understanding of the complexities of software development.";
