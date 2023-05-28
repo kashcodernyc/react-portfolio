@@ -1,6 +1,14 @@
 export const Projects = [
   {
     id: 1,
+    name: "Soccer Stats",
+    image: "images/soccer-stats.png",
+    description:
+      "Soccer Stats is a web application that provides users with up-to-date information and statistics about soccer matches and leagues. With a user-friendly interface, users can explore the latest fixtures, view standings and tables, and access detailed data on team performance and player statistics. The app leverages APIs to fetch real-time data, ensuring accurate and reliable information. Whether you're a passionate soccer fan or simply interested in keeping track of the game, Soccer-Stats is your go-to platform for comprehensive soccer insights.",
+    link: "https://soccer-leagues-stats.netlify.app/",
+  },
+  {
+    id: 2,
     name: "React Dashboard with Firebase",
     image: "images/dashboard.jpg",
     description:
@@ -8,7 +16,7 @@ export const Projects = [
     link: "https://firebase-admin-react.netlify.app/",
   },
   {
-    id: 2,
+    id: 3,
     name: "React Mapty",
     image: "images/mapty-react.jpg",
     description:
